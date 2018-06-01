@@ -1,11 +1,47 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      About
+  <ion-navbar color="secondary">
+    <ion-title align="center">
+      Dados
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+  <form [formGroup]="form">
+    <ion-item>
+      <ion-label stacked>Nome</ion-label>
+      <ion-input type="text" formControlName="nome"></ion-input>
+    </ion-item>
+    <ion-item *ngIf="!form.controls.nome.valid && (form.controls.nome.dirty || form.controls.nome.touched)" color="danger">
+      <div [hidden]="!form.controls.nome.errors.required">
+        O campo é obrigatório
+      </div>
+    </ion-item>
 
+    <ion-item>
+      <ion-label stacked>Telefone</ion-label>
+      <ion-input type="tel" formControlName="telefone"></ion-input>
+    </ion-item>
+    <ion-item *ngIf="!form.controls.telefone.valid && (form.controls.telefone.dirty || form.controls.telefone.touched)" color="danger">
+      <div [hidden]="!form.controls.telefone.errors.required">
+        O campo é obrigatório
+      </div>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Email</ion-label>
+      <ion-input type="text" formControlName="email"></ion-input>
+    </ion-item>
+    <ion-item *ngIf="!form.controls.email.valid && (form.controls.email.dirty || form.controls.email.touched)" color="danger">
+      <div [hidden]="!form.controls.email.errors.required">
+        O campo é obrigatório
+      </div>
+    </ion-item>
+  
+    
+
+    <div padding>
+      <button ion-button block type="submit" [disabled]="!form.valid" (click)="onSubmit()">Salvar</button>
+    </div>
+  </form>
+  <button ion-button color="danger" (click)='Deslogar()'>Deslogar</button>
 </ion-content>

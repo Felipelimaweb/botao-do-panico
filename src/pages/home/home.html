@@ -1,17 +1,21 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
-</ion-content>
+    <ion-navbar color="secondary">
+        <ion-title text-center>Central</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content>
+    
+        <h2  text-center>Bem vindo a central!</h2>
+        <ion-row>
+      <div>
+        <ion-badge class="badgeOri">Sua localização</ion-badge>
+      </div>
+      
+    </ion-row>
+    <div id="map">
+ 
+    </div>
+    <button ion-button color="danger" large block (click)="share()" class="butao"> Emergencia </button>
+    <h4 text-center>Utilize APENAS em caso de real emergencia!</h4>
+  </ion-content>

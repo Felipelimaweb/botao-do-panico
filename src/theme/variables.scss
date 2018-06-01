@@ -24,7 +24,7 @@ $app-direction: ltr;
 
 
 
-
+$text-input-highlight-color-valid:	#0a6d26;
 // Named Color Variables
 // --------------------------------------------------
 // Named colors makes it easy to reuse colors on various components.
@@ -35,10 +35,11 @@ $app-direction: ltr;
 
 $colors: (
   primary:    #488aff,
-  secondary:  #32db64,
+  secondary:  rgba(11, 148, 91, 0.705),
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  
 );
 
 

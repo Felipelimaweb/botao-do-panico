@@ -1,6 +1,6 @@
 {
   "name": "botao",
-  "app_id": "",
+  "app_id": "0feeb1f9",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}

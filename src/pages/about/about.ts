@@ -33,7 +33,7 @@ export class AboutPage {
   }
 
   private setupPageTitle(){
-    this.title = this.navParams.data.contact ? 'Alterando Contato' : 'Novo COntato';
+    this.title = this.navParams.data.contact ? 'Ao' : 'No';
   }
 
   createForm() {

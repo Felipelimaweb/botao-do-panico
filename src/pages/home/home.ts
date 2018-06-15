@@ -131,7 +131,7 @@ export class HomePage {
     share(){
       this.geolocation.getCurrentPosition().then(result => {
         // this.loadMap(result.coords.latitude, result.coords.longitude);
-        this.socialSharing.shareViaWhatsAppToReceiver('61992440662', 'Me ajude estou em perigo');
+        this.socialSharing.shareViaWhatsAppToReceiver('6192440662', 'Me ajude estou em perigo');
       });
       
     }
